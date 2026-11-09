@@ -1,0 +1,2914 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "name": "power-on auto run with CH1 only, CH2 unplugged",
+      "passed": true,
+      "checks": [
+        {
+          "label": "steady physical model RPM inside570..630",
+          "passed": true,
+          "evidence": {
+            "min": 594.4855038995553,
+            "max": 595.7237286867669,
+            "mean": 595.0300958156969
+          }
+        },
+        {
+          "label": "auto starts after stable steering500ms",
+          "passed": true,
+          "evidence": {
+            "firstDrive": 0.5925
+          }
+        },
+        {
+          "label": "target ramps gradually rather than jumps600",
+          "passed": true,
+          "evidence": [
+            {
+              "t": 1.010075375,
+              "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0",
+              "ref": 126
+            },
+            {
+              "t": 2.010592875,
+              "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0",
+              "ref": 426
+            },
+            {
+              "t": 3.01078325,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0",
+              "ref": 595
+            },
+            {
+              "t": 4.011231875,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0",
+              "ref": 595
+            },
+            {
+              "t": 5.010586625,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0",
+              "ref": 595
+            },
+            {
+              "t": 6.0109846875,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0",
+              "ref": 595
+            },
+            {
+              "t": 7.0103928125,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0",
+              "ref": 595
+            },
+            {
+              "t": 8.010997375,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0",
+              "ref": 595
+            },
+            {
+              "t": 9.01353825,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0",
+              "ref": 595
+            },
+            {
+              "t": 10.013792375,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0",
+              "ref": 595
+            }
+          ]
+        },
+        {
+          "label": "declares stable5percent band only after settling",
+          "passed": true
+        },
+        {
+          "label": "drive exceeds old160 cap but not255",
+          "passed": true,
+          "evidence": {
+            "maximumPWM": 198
+          }
+        },
+        {
+          "label": "no overspeed latch on nominal plant",
+          "passed": true
+        },
+        {
+          "label": "both bridge inputs never active together",
+          "passed": true
+        },
+        {
+          "label": "servos still receive pulses",
+          "passed": true
+        },
+        {
+          "label": "motor stopped throughout power-on qualification",
+          "passed": true
+        }
+      ],
+      "maximumRPM": 599.750485801498,
+      "maximumPWM": 198,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0044878125,
+          "line": "ENC CNT=30 RPM=92 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.010075375,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0138791875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=48"
+        },
+        {
+          "t": 1.5127459375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=96"
+        },
+        {
+          "t": 2.005247125,
+          "line": "ENC CNT=447 RPM=392 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.010592875,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.014538875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=144"
+        },
+        {
+          "t": 2.5143185625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.0046999375,
+          "line": "ENC CNT=1338 RPM=600 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.01078325,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0146981875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.513752875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 4.0051419375,
+          "line": "ENC CNT=2352 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.011231875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 4.0151684375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 4.5141906875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 5.0047764375,
+          "line": "ENC CNT=3367 RPM=594 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.010586625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 5.0144978125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 5.513739125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 6.0050813125,
+          "line": "ENC CNT=4373 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.0109846875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 6.0149245625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 6.5142595625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 7.0044363125,
+          "line": "ENC CNT=5387 RPM=596 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.0103928125,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 7.014325,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 7.51476975,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 8.0050063125,
+          "line": "ENC CNT=6394 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 8.010997375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 8.015481375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 8.515203,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 9.0097524375,
+          "line": "ENC CNT=7410 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 9.01353825,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 9.0174091875,
+          "line": "S=3 CH1=1820 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 9.5175495,
+          "line": "S=3 CH1=1796 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 10.0099405625,
+          "line": "ENC CNT=8424 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 10.013792375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 10.017633,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 10.5170156875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        }
+      ]
+    },
+    {
+      "name": "load increase within available power",
+      "passed": true,
+      "checks": [
+        {
+          "label": "recovers into5percent band after more load",
+          "passed": true,
+          "evidence": {
+            "min": 594.472697332935,
+            "max": 595.3979192427378,
+            "mean": 595.255890691733
+          }
+        },
+        {
+          "label": "increases PWM for load",
+          "passed": true,
+          "evidence": {
+            "maximumPWM": 229
+          }
+        },
+        {
+          "label": "no false encoder fault",
+          "passed": true
+        }
+      ],
+      "maximumRPM": 599.750485801498,
+      "maximumPWM": 229,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0044878125,
+          "line": "ENC CNT=30 RPM=92 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.010075375,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0138791875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=48"
+        },
+        {
+          "t": 1.5127459375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=96"
+        },
+        {
+          "t": 2.005247125,
+          "line": "ENC CNT=447 RPM=392 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.010592875,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.014538875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=144"
+        },
+        {
+          "t": 2.5143185625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.0046999375,
+          "line": "ENC CNT=1338 RPM=600 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.01078325,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0146981875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.513752875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 4.0051419375,
+          "line": "ENC CNT=2352 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.011231875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 4.0151684375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 4.5141906875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 5.0047764375,
+          "line": "ENC CNT=3367 RPM=594 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.010586625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 5.0144978125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 5.513739125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 6.0050813125,
+          "line": "ENC CNT=4373 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.0109846875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 6.0149245625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 6.5142595625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 7.0044363125,
+          "line": "ENC CNT=5387 RPM=596 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.0103928125,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 7.014325,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 7.51476975,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 8.0050150625,
+          "line": "ENC CNT=6394 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 8.010991125,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 8.015506,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 8.515244,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=221"
+        },
+        {
+          "t": 9.0054686875,
+          "line": "ENC CNT=7358 RPM=586 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 9.0107599375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 9.014955875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=227"
+        },
+        {
+          "t": 9.5156380625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 10.0047605625,
+          "line": "ENC CNT=8360 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 10.010844375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 10.0153416875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 10.5149540625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 11.0054101875,
+          "line": "ENC CNT=9376 RPM=594 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 11.0111815,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 11.0151489375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 11.5154350625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 12.00486875,
+          "line": "ENC CNT=10382 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 12.010729,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 12.0150259375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 12.5146744375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        }
+      ]
+    },
+    {
+      "name": "encoder disappears then recovers during powered run",
+      "passed": true,
+      "checks": [
+        {
+          "label": "encoder loss forces driver off within230ms",
+          "passed": true,
+          "evidence": {
+            "firstSleepAfterDrop": 4.685
+          }
+        },
+        {
+          "label": "encoder recovery cannot auto-restart",
+          "passed": true
+        }
+      ],
+      "maximumRPM": 599.750485801498,
+      "maximumPWM": 198,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0044878125,
+          "line": "ENC CNT=30 RPM=92 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.010075375,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0138791875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=48"
+        },
+        {
+          "t": 1.5127459375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=96"
+        },
+        {
+          "t": 2.005247125,
+          "line": "ENC CNT=447 RPM=392 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.010592875,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.014538875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=144"
+        },
+        {
+          "t": 2.5143185625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.0046999375,
+          "line": "ENC CNT=1338 RPM=600 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.01078325,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0146981875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.513752875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 4.0051419375,
+          "line": "ENC CNT=2352 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.011231875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 4.0151684375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 4.514241,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 5.0046014375,
+          "line": "ENC CNT=2861 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.0101939375,
+          "line": "SPD T=0 REF=0 F=1 SAT=0 OK5=0 WHY=3"
+        },
+        {
+          "t": 5.0138218125,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 5.5133413125,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 6.0049874375,
+          "line": "ENC CNT=2912 RPM=14 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.0106395625,
+          "line": "SPD T=0 REF=0 F=1 SAT=0 OK5=0 WHY=3"
+        },
+        {
+          "t": 6.014271125,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 6.514016875,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        }
+      ]
+    },
+    {
+      "name": "missing encoder at startup",
+      "passed": true,
+      "checks": [
+        {
+          "label": "blind startup duty capped140",
+          "passed": true,
+          "evidence": {
+            "maximumPWM": 140
+          }
+        },
+        {
+          "label": "no-pulse startup stops with encoder fault within3s absolute bound",
+          "passed": true,
+          "evidence": {
+            "firstDrive": 0.5925
+          }
+        }
+      ],
+      "maximumRPM": 434.894542297473,
+      "maximumPWM": 140,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.004280375,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 1.009992,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0138504375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=65"
+        },
+        {
+          "t": 1.512856875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=140"
+        },
+        {
+          "t": 2.00481325,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 2.0103364375,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.0141523125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=140"
+        },
+        {
+          "t": 2.5140325,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 3.0041479375,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 3.0103118125,
+          "line": "SPD T=0 REF=0 F=1 SAT=0 OK5=0 WHY=2"
+        },
+        {
+          "t": 3.01396075,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 3.5135460625,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 4.0046210625,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 4.0107858125,
+          "line": "SPD T=0 REF=0 F=1 SAT=0 OK5=0 WHY=2"
+        },
+        {
+          "t": 4.0144328125,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 4.51401525,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 5.0040631875,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 5.01007475,
+          "line": "SPD T=0 REF=0 F=1 SAT=0 OK5=0 WHY=2"
+        },
+        {
+          "t": 5.013714,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 5.5134031875,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        }
+      ]
+    },
+    {
+      "name": "insufficient motor capability cannot meet5percent",
+      "passed": true,
+      "checks": [
+        {
+          "label": "out-of-band speed stops and locks asE003",
+          "passed": true
+        },
+        {
+          "label": "does not falsely declare tolerance pass",
+          "passed": true
+        }
+      ],
+      "maximumRPM": 505.99999605879196,
+      "maximumPWM": 255,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0046071875,
+          "line": "ENC CNT=20 RPM=61 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.01028325,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0141381875,
+          "line": "S=3 CH1=1804 OK=1 RUN=1 BAT=7398 PWM=56"
+        },
+        {
+          "t": 1.51387075,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=109"
+        },
+        {
+          "t": 2.0052590625,
+          "line": "ENC CNT=323 RPM=286 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.0105568125,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.0144798125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=165"
+        },
+        {
+          "t": 2.5143368125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=220"
+        },
+        {
+          "t": 3.0047049375,
+          "line": "ENC CNT=1001 RPM=495 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.010648875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0145543125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+        },
+        {
+          "t": 3.5137860625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+        },
+        {
+          "t": 4.0052208125,
+          "line": "ENC CNT=1855 RPM=506 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.0111058125,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 4.0150155,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+        },
+        {
+          "t": 4.51428325,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+        },
+        {
+          "t": 5.0045815,
+          "line": "ENC CNT=2717 RPM=506 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.0105135625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 5.0144531875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+        },
+        {
+          "t": 5.5137528125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+        },
+        {
+          "t": 6.0050778125,
+          "line": "ENC CNT=3408 RPM=132 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.01068375,
+          "line": "SPD T=0 REF=0 F=3 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 6.0144286875,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 6.5141386875,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 7.004295375,
+          "line": "ENC CNT=3469 RPM=11 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.0100815625,
+          "line": "SPD T=0 REF=0 F=3 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 7.013974375,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 7.5146510625,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 8.0047069375,
+          "line": "ENC CNT=3471 RPM=5 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 8.0105006875,
+          "line": "SPD T=0 REF=0 F=3 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 8.01532375,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 8.5149814375,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 9.00515025,
+          "line": "ENC CNT=3471 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 9.010104875,
+          "line": "SPD T=0 REF=0 F=3 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 9.01478675,
+          "line": "S=10 CH1=1796 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 9.5154271875,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 10.0045155,
+          "line": "ENC CNT=3471 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 10.0102978125,
+          "line": "SPD T=0 REF=0 F=3 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 10.01527025,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 10.5147635,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 11.00497775,
+          "line": "ENC CNT=3471 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 11.0107643125,
+          "line": "SPD T=0 REF=0 F=3 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 11.014499875,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 11.5152413125,
+          "line": "S=10 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        }
+      ]
+    },
+    {
+      "name": "sudden unloading",
+      "passed": true,
+      "checks": [
+        {
+          "label": "unloading either remains controlled or latches cut",
+          "passed": true,
+          "evidence": {
+            "tripped": true,
+            "maximumRPM": 627.1452442879952
+          }
+        },
+        {
+          "label": "no runaway after unloading",
+          "passed": true,
+          "evidence": {
+            "maximumRPM": 627.1452442879952
+          }
+        }
+      ],
+      "maximumRPM": 627.1452442879952,
+      "maximumPWM": 229,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.00447575,
+          "line": "ENC CNT=25 RPM=77 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.0100831875,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0138959375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=51"
+        },
+        {
+          "t": 1.5129915625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=102"
+        },
+        {
+          "t": 2.0052815625,
+          "line": "ENC CNT=393 RPM=346 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.01059525,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.014552875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=153"
+        },
+        {
+          "t": 2.514326625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=204"
+        },
+        {
+          "t": 3.0047553125,
+          "line": "ENC CNT=1194 RPM=568 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.0108236875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0147379375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=224"
+        },
+        {
+          "t": 3.5138976875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=228"
+        },
+        {
+          "t": 4.0053665625,
+          "line": "ENC CNT=2196 RPM=594 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.0112284375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 4.01519,
+          "line": "S=3 CH1=1804 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 4.5142986875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 5.004572375,
+          "line": "ENC CNT=3201 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.0106754375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 5.0145841875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 5.513733375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 6.00513625,
+          "line": "ENC CNT=4212 RPM=596 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.0110144375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 6.01493925,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=228"
+        },
+        {
+          "t": 6.5143806875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 7.0046540625,
+          "line": "ENC CNT=5227 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.010464125,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 7.0143913125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=229"
+        },
+        {
+          "t": 7.5145050625,
+          "line": "S=8 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 8.0048370625,
+          "line": "ENC CNT=5551 RPM=32 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 8.0104681875,
+          "line": "SPD T=0 REF=0 F=2 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 8.0152121875,
+          "line": "S=8 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 8.5149544375,
+          "line": "S=8 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        }
+      ]
+    },
+    {
+      "name": "steering signal loss and recovery requires power cycle",
+      "passed": true,
+      "checks": [
+        {
+          "label": "signal timeout stops motor",
+          "passed": true
+        },
+        {
+          "label": "signal recovery does not restart",
+          "passed": true
+        }
+      ],
+      "maximumRPM": 599.750485801498,
+      "maximumPWM": 198,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0044878125,
+          "line": "ENC CNT=30 RPM=92 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.010075375,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0138791875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=48"
+        },
+        {
+          "t": 1.5127459375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=96"
+        },
+        {
+          "t": 2.005247125,
+          "line": "ENC CNT=447 RPM=392 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.010592875,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.014538875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=144"
+        },
+        {
+          "t": 2.5143185625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.0046999375,
+          "line": "ENC CNT=1338 RPM=600 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.01078325,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0146981875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.513752875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 4.0051419375,
+          "line": "ENC CNT=2352 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.011231875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 4.0151684375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 4.5139204375,
+          "line": "S=9 CH1=1800 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 5.0044895625,
+          "line": "ENC CNT=2943 RPM=70 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.010232,
+          "line": "SPD T=0 REF=0 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 5.0138920625,
+          "line": "S=9 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 5.513480375,
+          "line": "S=9 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 6.00483925,
+          "line": "ENC CNT=2973 RPM=9 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.0106411875,
+          "line": "SPD T=0 REF=0 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 6.0142863125,
+          "line": "S=9 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 6.5141,
+          "line": "S=9 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 7.0042945625,
+          "line": "ENC CNT=2974 RPM=6 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.010015625,
+          "line": "SPD T=0 REF=0 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 7.013796375,
+          "line": "S=9 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 7.51452475,
+          "line": "S=9 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        }
+      ]
+    },
+    {
+      "name": "100us nFAULT during speed control",
+      "passed": true,
+      "checks": [
+        {
+          "label": "short driver fault latches stop",
+          "passed": true
+        }
+      ],
+      "maximumRPM": 599.750485801498,
+      "maximumPWM": 198,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0044878125,
+          "line": "ENC CNT=30 RPM=92 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.010075375,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0138791875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=48"
+        },
+        {
+          "t": 1.5127459375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=96"
+        },
+        {
+          "t": 2.005247125,
+          "line": "ENC CNT=447 RPM=392 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.010592875,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.014538875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=144"
+        },
+        {
+          "t": 2.5143185625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.0046999375,
+          "line": "ENC CNT=1338 RPM=600 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.01078325,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0146981875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.513752875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 4.0051419375,
+          "line": "ENC CNT=2352 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.011231875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 4.0151684375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 4.514147125,
+          "line": "S=4 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 5.0045288125,
+          "line": "ENC CNT=2840 RPM=49 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.0101723125,
+          "line": "SPD T=0 REF=0 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 5.0137815,
+          "line": "S=4 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 5.5134248125,
+          "line": "S=4 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        }
+      ]
+    },
+    {
+      "name": "driver startup nFAULT settles in1ms",
+      "passed": true,
+      "checks": [
+        {
+          "label": "wakeup transient does not latch false driver fault",
+          "passed": true,
+          "evidence": {
+            "min": 594.5270388668699,
+            "max": 595.5989282949315,
+            "mean": 595.0221813037125
+          }
+        }
+      ],
+      "maximumRPM": 599.7416970301863,
+      "maximumPWM": 198,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0045355,
+          "line": "ENC CNT=30 RPM=92 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.01010875,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0139179375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=48"
+        },
+        {
+          "t": 1.5127441875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=96"
+        },
+        {
+          "t": 2.0051483125,
+          "line": "ENC CNT=447 RPM=392 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.0105054375,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.014452875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=144"
+        },
+        {
+          "t": 2.514344375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.00474225,
+          "line": "ENC CNT=1338 RPM=600 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.01066025,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0145608125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.5137494375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 4.005227,
+          "line": "ENC CNT=2352 RPM=596 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.0111789375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 4.0151208125,
+          "line": "S=3 CH1=1796 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 4.5143166875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 5.0046070625,
+          "line": "ENC CNT=3362 RPM=594 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.010516875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 5.01447825,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 5.5137249375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 6.0050789375,
+          "line": "ENC CNT=4373 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.01099675,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 6.0149373125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 6.5143546875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 7.00454375,
+          "line": "ENC CNT=5383 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.0104619375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 7.014346,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 7.5147811875,
+          "line": "S=3 CH1=1804 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 8.0049909375,
+          "line": "ENC CNT=6394 RPM=596 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 8.0108589375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 8.0155110625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 8.5154130625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 9.009863,
+          "line": "ENC CNT=7409 RPM=596 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 9.0136396875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 9.0175059375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 9.5175151875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        }
+      ]
+    },
+    {
+      "name": "CH2 throttle ignored while CH1 still steers",
+      "passed": true,
+      "checks": [
+        {
+          "label": "throttle reverse cannot reverse motor",
+          "passed": true
+        },
+        {
+          "label": "releasing throttle does not stop fixed speed run",
+          "passed": true,
+          "evidence": {
+            "min": 594.4915950449702,
+            "max": 595.6911956718259,
+            "mean": 595.0684681458929
+          }
+        },
+        {
+          "label": "wide quick steering still followsCH1",
+          "passed": true
+        }
+      ],
+      "maximumRPM": 599.9391791393285,
+      "maximumPWM": 198,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052468125,
+          "line": "S=1 CH1=1500 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0044769375,
+          "line": "ENC CNT=30 RPM=92 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.0100253125,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.01378725,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=48"
+        },
+        {
+          "t": 1.512654625,
+          "line": "S=3 CH1=1496 OK=1 RUN=1 BAT=7398 PWM=96"
+        },
+        {
+          "t": 2.0051670625,
+          "line": "ENC CNT=446 RPM=391 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.0104789375,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.0142894375,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=144"
+        },
+        {
+          "t": 2.5143364375,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.00477925,
+          "line": "ENC CNT=1340 RPM=600 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.010729,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0146566875,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.513749875,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 4.005227625,
+          "line": "ENC CNT=2355 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.0111761875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 4.0151129375,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 4.51425275,
+          "line": "S=3 CH1=2000 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 5.004621375,
+          "line": "ENC CNT=3362 RPM=596 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.010672875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 5.0146098125,
+          "line": "S=3 CH1=2000 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 5.5136769375,
+          "line": "S=3 CH1=1000 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 6.0050541875,
+          "line": "ENC CNT=4377 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.01105025,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 6.0150308125,
+          "line": "S=3 CH1=1000 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 6.51406275,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 7.0044911875,
+          "line": "ENC CNT=5386 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.0104411875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 7.0143761875,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 7.5145740625,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 8.004952,
+          "line": "ENC CNT=6397 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 8.0108860625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 8.0152294375,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 8.5150265,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 9.0053800625,
+          "line": "ENC CNT=7407 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 9.0106698125,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 9.0147203125,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 9.5154576875,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 10.00481225,
+          "line": "ENC CNT=8418 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 10.01076925,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 10.0151620625,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 10.5149165,
+          "line": "S=3 CH1=1500 OK=1 RUN=1 BAT=7398 PWM=190"
+        }
+      ]
+    },
+    {
+      "name": "no steering signal means no auto start",
+      "passed": true,
+      "checks": [
+        {
+          "label": "no CH1 means motor never wakes",
+          "passed": true
+        }
+      ],
+      "maximumRPM": 0,
+      "maximumPWM": 0,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5049779375,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0043238125,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 1.009579375,
+          "line": "SPD T=0 REF=0 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0129590625,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.5123835,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 2.004833,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 2.0099084375,
+          "line": "SPD T=0 REF=0 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.0133153125,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 2.5137980625,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 3.0041941875,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 3.010301375,
+          "line": "SPD T=0 REF=0 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0136805,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 3.513200375,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        }
+      ]
+    },
+    {
+      "name": "late paired receiver still needs stable500ms",
+      "passed": true,
+      "checks": [
+        {
+          "label": "no premature start before stable receiver",
+          "passed": true,
+          "evidence": {
+            "firstDrive": 2.573
+          }
+        }
+      ],
+      "maximumRPM": 599.9111255479172,
+      "maximumPWM": 197,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5049779375,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.0043238125,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 1.009579375,
+          "line": "SPD T=0 REF=0 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0129590625,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.5123835,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 2.004833,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 2.0099084375,
+          "line": "SPD T=0 REF=0 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.0133364375,
+          "line": "S=0 CH1=0 OK=0 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 2.514174,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 3.0044985625,
+          "line": "ENC CNT=33 RPM=96 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.010698,
+          "line": "SPD T=595 REF=132 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0144073125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=50"
+        },
+        {
+          "t": 3.513617875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=98"
+        },
+        {
+          "t": 4.0050259375,
+          "line": "ENC CNT=458 RPM=397 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.0112005625,
+          "line": "SPD T=595 REF=432 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 4.0150483125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=146"
+        },
+        {
+          "t": 4.5141795,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=194"
+        }
+      ]
+    },
+    {
+      "name": "startup breakaway requiresPWM100",
+      "passed": true,
+      "checks": [
+        {
+          "label": "no falseE001 before breakaway threshold",
+          "passed": true
+        },
+        {
+          "label": "motor can establish startup torque gradually",
+          "passed": true,
+          "evidence": {
+            "maximumPWM": 198
+          }
+        },
+        {
+          "label": "returns to570..630 after delayed start",
+          "passed": true,
+          "evidence": {
+            "min": 594.467592060731,
+            "max": 595.7013462391969,
+            "mean": 595.0828552424778
+          }
+        }
+      ],
+      "maximumRPM": 599.8274872563287,
+      "maximumPWM": 198,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.004280375,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 1.009992,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0138504375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=65"
+        },
+        {
+          "t": 1.51282675,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=98"
+        },
+        {
+          "t": 2.0053078125,
+          "line": "ENC CNT=343 RPM=391 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.0106469375,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.0144615625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=144"
+        },
+        {
+          "t": 2.5144625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.0049305625,
+          "line": "ENC CNT=1240 RPM=600 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.01071625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.01469825,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=192"
+        },
+        {
+          "t": 3.513735875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 4.00524625,
+          "line": "ENC CNT=2249 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.011104375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 4.015049875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 4.514245,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 5.0046730625,
+          "line": "ENC CNT=3259 RPM=596 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.01056625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 5.0145221875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 5.5137816875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 6.0051506875,
+          "line": "ENC CNT=4271 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.0110254375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 6.014970375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 6.5143071875,
+          "line": "S=3 CH1=1784 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 7.0046205625,
+          "line": "ENC CNT=5281 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.01048175,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 7.014434125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 7.5148448125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 8.0050108125,
+          "line": "ENC CNT=6291 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 8.0109453125,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 8.0156176875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 8.5151641875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 9.00534525,
+          "line": "ENC CNT=7307 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 9.0106455625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 9.0148713125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 9.5156791875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 10.004833125,
+          "line": "ENC CNT=8317 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 10.010791625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 10.0153150625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 10.5149465,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=191"
+        },
+        {
+          "t": 11.005265625,
+          "line": "ENC CNT=9324 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 11.0111771875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 11.0151399375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        },
+        {
+          "t": 11.5153680625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=190"
+        }
+      ]
+    },
+    {
+      "name": "mechanically jammed startup stays bounded",
+      "passed": true,
+      "checks": [
+        {
+          "label": "jam never receives full255 blind drive",
+          "passed": true,
+          "evidence": {
+            "maximumPWM": 140
+          }
+        },
+        {
+          "label": "jam is latched off by3s maximum drive time",
+          "passed": true,
+          "evidence": {
+            "firstDrive": 0.5925
+          }
+        }
+      ],
+      "maximumRPM": 0,
+      "maximumPWM": 140,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.004280375,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 1.009992,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0138504375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=65"
+        },
+        {
+          "t": 1.512856875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=140"
+        },
+        {
+          "t": 2.00481325,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 2.0103364375,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.0141523125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=140"
+        },
+        {
+          "t": 2.5140325,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 3.0041479375,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 3.0103118125,
+          "line": "SPD T=0 REF=0 F=1 SAT=0 OK5=0 WHY=2"
+        },
+        {
+          "t": 3.01396075,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 3.5135460625,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 4.0046210625,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 4.0107858125,
+          "line": "SPD T=0 REF=0 F=1 SAT=0 OK5=0 WHY=2"
+        },
+        {
+          "t": 4.0144328125,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 4.51401525,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 5.0040631875,
+          "line": "ENC CNT=0 RPM=0 CAL=1 FRESH=0 DISP=0"
+        },
+        {
+          "t": 5.01007475,
+          "line": "SPD T=0 REF=0 F=1 SAT=0 OK5=0 WHY=2"
+        },
+        {
+          "t": 5.013714,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 5.5134031875,
+          "line": "S=7 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        }
+      ]
+    },
+    {
+      "name": "high water load with headroom reaches595",
+      "passed": true,
+      "checks": [
+        {
+          "label": "tracks595 with available headroom",
+          "passed": true,
+          "evidence": {
+            "min": 595.1999999669456,
+            "max": 595.1999999999204,
+            "mean": 595.1999999960063
+          }
+        },
+        {
+          "label": "uses nearly full duty under high load",
+          "passed": true,
+          "evidence": {
+            "maximumPWM": 255
+          }
+        },
+        {
+          "label": "no false protection in steady load",
+          "passed": true,
+          "evidence": [
+            {
+              "t": 0.004160375,
+              "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+            },
+            {
+              "t": 0.5052918125,
+              "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+            },
+            {
+              "t": 1.004551875,
+              "line": "ENC CNT=16 RPM=50 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 1.0101190625,
+              "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+            },
+            {
+              "t": 1.0139214375,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=57"
+            },
+            {
+              "t": 1.5128703125,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=110"
+            },
+            {
+              "t": 2.0052895,
+              "line": "ENC CNT=318 RPM=299 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 2.0106006875,
+              "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+            },
+            {
+              "t": 2.014544,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=162"
+            },
+            {
+              "t": 2.51442225,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=215"
+            },
+            {
+              "t": 3.00482525,
+              "line": "ENC CNT=1037 RPM=542 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 3.0107361875,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+            },
+            {
+              "t": 3.0146253125,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+            },
+            {
+              "t": 3.513863,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+            },
+            {
+              "t": 4.0051524375,
+              "line": "ENC CNT=2034 RPM=601 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 4.0112473125,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+            },
+            {
+              "t": 4.015184875,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=250"
+            },
+            {
+              "t": 4.514156625,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 5.004648875,
+              "line": "ENC CNT=3048 RPM=595 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 5.0106720625,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+            },
+            {
+              "t": 5.0146286875,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=247"
+            },
+            {
+              "t": 5.5137145,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 6.0051145,
+              "line": "ENC CNT=4059 RPM=595 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 6.0109961875,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+            },
+            {
+              "t": 6.0149410625,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 6.514385375,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 7.0044450625,
+              "line": "ENC CNT=5070 RPM=595 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 7.0105170625,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+            },
+            {
+              "t": 7.014474375,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 7.5146935,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 8.0050015,
+              "line": "ENC CNT=6086 RPM=595 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 8.0109633125,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+            },
+            {
+              "t": 8.01548725,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 8.515203,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 9.0054368125,
+              "line": "ENC CNT=7096 RPM=595 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 9.0107441875,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+            },
+            {
+              "t": 9.0149556875,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 9.5156146875,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 10.004858,
+              "line": "ENC CNT=8102 RPM=595 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 10.0108584375,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+            },
+            {
+              "t": 10.0153098125,
+              "line": "S=3 CH1=1784 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 10.51481625,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 11.0052078125,
+              "line": "ENC CNT=9114 RPM=595 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 11.0112986875,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+            },
+            {
+              "t": 11.0152558125,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 11.5153414375,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 12.004708375,
+              "line": "ENC CNT=10124 RPM=595 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 12.01073075,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+            },
+            {
+              "t": 12.01504975,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 12.5148084375,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 13.0053144375,
+              "line": "ENC CNT=11140 RPM=595 CAL=1 FRESH=1 DISP=0"
+            },
+            {
+              "t": 13.011056375,
+              "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+            },
+            {
+              "t": 13.0155094375,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            },
+            {
+              "t": 13.515332875,
+              "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+            }
+          ]
+        }
+      ],
+      "maximumRPM": 600.78454313297,
+      "maximumPWM": 255,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.004551875,
+          "line": "ENC CNT=16 RPM=50 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.0101190625,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.0139214375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=57"
+        },
+        {
+          "t": 1.5128703125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=110"
+        },
+        {
+          "t": 2.0052895,
+          "line": "ENC CNT=318 RPM=299 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.0106006875,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.014544,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=162"
+        },
+        {
+          "t": 2.51442225,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=215"
+        },
+        {
+          "t": 3.00482525,
+          "line": "ENC CNT=1037 RPM=542 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.0107361875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0146253125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+        },
+        {
+          "t": 3.513863,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=253"
+        },
+        {
+          "t": 4.0051524375,
+          "line": "ENC CNT=2034 RPM=601 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.0112473125,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 4.015184875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=250"
+        },
+        {
+          "t": 4.514156625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 5.004648875,
+          "line": "ENC CNT=3048 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.0106720625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 5.0146286875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=247"
+        },
+        {
+          "t": 5.5137145,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 6.0051145,
+          "line": "ENC CNT=4059 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.0109961875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 6.0149410625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 6.514385375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 7.0044450625,
+          "line": "ENC CNT=5070 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.0105170625,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 7.014474375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 7.5146935,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 8.0050015,
+          "line": "ENC CNT=6086 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 8.0109633125,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 8.01548725,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 8.515203,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 9.0054368125,
+          "line": "ENC CNT=7096 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 9.0107441875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 9.0149556875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 9.5156146875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 10.004858,
+          "line": "ENC CNT=8102 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 10.0108584375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 10.0153098125,
+          "line": "S=3 CH1=1784 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 10.51481625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 11.0052078125,
+          "line": "ENC CNT=9114 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 11.0112986875,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 11.0152558125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 11.5153414375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 12.004708375,
+          "line": "ENC CNT=10124 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 12.01073075,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 12.01504975,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 12.5148084375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 13.0053144375,
+          "line": "ENC CNT=11140 RPM=595 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 13.011056375,
+          "line": "SPD T=595 REF=595 F=0 SAT=0 OK5=1 WHY=0"
+        },
+        {
+          "t": 13.0155094375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        },
+        {
+          "t": 13.515332875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=248"
+        }
+      ]
+    },
+    {
+      "name": "physical580 ceiling cannot be boosted by software",
+      "passed": true,
+      "checks": [
+        {
+          "label": "honest physical580 ceiling remains in allowed band",
+          "passed": true,
+          "evidence": {
+            "min": 579.9999999934173,
+            "max": 579.9999999999204,
+            "mean": 579.9999999991778
+          }
+        },
+        {
+          "label": "full output reported as saturated",
+          "passed": true,
+          "evidence": {
+            "maximumPWM": 255
+          }
+        },
+        {
+          "label": "580 inside570..630 does not cause speed-band stop",
+          "passed": true
+        }
+      ],
+      "maximumRPM": 579.9999999999204,
+      "maximumPWM": 255,
+      "lines": [
+        {
+          "t": 0.004160375,
+          "line": "Boat V5.4 TARGET595; DISP600CAP; CH1 only"
+        },
+        {
+          "t": 0.5052918125,
+          "line": "S=1 CH1=1800 OK=1 RUN=0 BAT=7398 PWM=0"
+        },
+        {
+          "t": 1.00459875,
+          "line": "ENC CNT=15 RPM=46 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 1.0101953125,
+          "line": "SPD T=595 REF=126 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 1.01397025,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=57"
+        },
+        {
+          "t": 1.5129149375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=111"
+        },
+        {
+          "t": 2.00517025,
+          "line": "ENC CNT=305 RPM=286 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 2.01056275,
+          "line": "SPD T=595 REF=426 F=0 SAT=0 OK5=0 WHY=0"
+        },
+        {
+          "t": 2.0145088125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=165"
+        },
+        {
+          "t": 2.5143714375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=218"
+        },
+        {
+          "t": 3.00492675,
+          "line": "ENC CNT=1002 RPM=525 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 3.010745375,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=0 WHY=0"
+        },
+        {
+          "t": 3.0146866875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 3.5137533125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 4.005217125,
+          "line": "ENC CNT=1955 RPM=576 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 4.0111006875,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=0 WHY=0"
+        },
+        {
+          "t": 4.015095875,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 4.5143528125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 5.0047188125,
+          "line": "ENC CNT=2937 RPM=580 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 5.0105985625,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=1 WHY=0"
+        },
+        {
+          "t": 5.0145923125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 5.5136180625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 6.00505975,
+          "line": "ENC CNT=3923 RPM=580 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 6.0111166875,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=1 WHY=0"
+        },
+        {
+          "t": 6.01494425,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 6.5143354375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 7.004529375,
+          "line": "ENC CNT=4907 RPM=580 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 7.0105311875,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=1 WHY=0"
+        },
+        {
+          "t": 7.014491625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 7.51486125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 8.0049644375,
+          "line": "ENC CNT=5893 RPM=580 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 8.0109325,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=1 WHY=0"
+        },
+        {
+          "t": 8.0155274375,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 8.51528425,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 9.00546575,
+          "line": "ENC CNT=6877 RPM=580 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 9.0107881875,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=1 WHY=0"
+        },
+        {
+          "t": 9.0150565625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 9.5157633125,
+          "line": "S=3 CH1=1808 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 10.0047528125,
+          "line": "ENC CNT=7862 RPM=580 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 10.010731875,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=1 WHY=0"
+        },
+        {
+          "t": 10.0154943125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 10.515004,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 11.0052535625,
+          "line": "ENC CNT=8848 RPM=580 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 11.0112338125,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=1 WHY=0"
+        },
+        {
+          "t": 11.0150488125,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 11.5152719375,
+          "line": "S=3 CH1=1808 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 12.0047088125,
+          "line": "ENC CNT=9832 RPM=580 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 12.0106866875,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=1 WHY=0"
+        },
+        {
+          "t": 12.0150370625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 12.5146925,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 13.0096151875,
+          "line": "ENC CNT=10818 RPM=580 CAL=1 FRESH=1 DISP=0"
+        },
+        {
+          "t": 13.0133633125,
+          "line": "SPD T=595 REF=595 F=0 SAT=1 OK5=1 WHY=0"
+        },
+        {
+          "t": 13.0173005,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        },
+        {
+          "t": 13.5163325625,
+          "line": "S=3 CH1=1800 OK=1 RUN=1 BAT=7398 PWM=255"
+        }
+      ]
+    }
+  ],
+  "limitation": "Simulation uses assumed first-order plant models. It does not establish real motor response, peak RPM, measurement accuracy, or tuning."
+}

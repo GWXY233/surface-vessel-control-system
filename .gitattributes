@@ -1,0 +1,9 @@
+* text=auto
+*.md text eol=lf
+*.ino text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.epro2 binary
+*.pdf binary
+*.png binary
+*.webp binary

@@ -1,0 +1,8 @@
+Item,Quantity,Specification,Notes
+Nano,1,Classic ATmega328P 5V 16MHz,Check actual clone pin mapping and USB orientation
+Motor,1,GA25-370-0660-EN 6V 9.6:1,Recalibrate encoder when changing motor
+Servo,2,Positional servo explicitly rated for6V,Sample uses seller-rated SG90; calibrate travel
+Receiver,1,Original paired receiver with CH1 PWM,Match S + GND on both ends
+Display,1,CLK DIO VCC GND four-digit module,5V module; see J10 wiring
+Buck converter,1,2S input adjustable6.0V output,Capacity must be validated for motor and two servos
+Battery,1,2S Li-ion/LiPo nominal7.4V max8.4V,Use suitable protection and master switch

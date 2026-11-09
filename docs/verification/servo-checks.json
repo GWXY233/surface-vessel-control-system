@@ -1,0 +1,184 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "left: reaches upper command within120ms",
+      "passed": true,
+      "evidence": [
+        {
+          "at": 1014780.9375,
+          "width": 1499.875,
+          "rise": 1013281.0625
+        },
+        {
+          "at": 1035458.4375,
+          "width": 2174.4375,
+          "rise": 1033284
+        },
+        {
+          "at": 1055629.9375,
+          "width": 2342.875,
+          "rise": 1053287.0625
+        },
+        {
+          "at": 1075674.9375,
+          "width": 2384.8125,
+          "rise": 1073290.125
+        },
+        {
+          "at": 1095688.4375,
+          "width": 2395.4375,
+          "rise": 1093293
+        },
+        {
+          "at": 1115694.5,
+          "width": 2398.5,
+          "rise": 1113296
+        }
+      ]
+    },
+    {
+      "name": "left: reaches lower command within120ms",
+      "passed": true,
+      "evidence": [
+        {
+          "at": 1515749.625,
+          "width": 2393.625,
+          "rise": 1513356
+        },
+        {
+          "at": 1534407.4375,
+          "width": 1048.4375,
+          "rise": 1533359
+        },
+        {
+          "at": 1554074.5625,
+          "width": 712.5625,
+          "rise": 1553362
+        },
+        {
+          "at": 1573993.4375,
+          "width": 628.4375,
+          "rise": 1573365
+        },
+        {
+          "at": 1593975.4375,
+          "width": 607.4375,
+          "rise": 1593368
+        },
+        {
+          "at": 1613972.5,
+          "width": 601.5,
+          "rise": 1613371
+        }
+      ]
+    },
+    {
+      "name": "left: full travel stays inside software endpoints",
+      "passed": true
+    },
+    {
+      "name": "left: retains50Hz after timer startup",
+      "passed": true,
+      "evidence": {
+        "meanPeriod": 20003.022685185184,
+        "min": 20002.8125,
+        "max": 20003.875
+      }
+    },
+    {
+      "name": "left: returns to center",
+      "passed": true
+    },
+    {
+      "name": "right: reaches upper command within120ms",
+      "passed": true,
+      "evidence": [
+        {
+          "at": 1016291.5,
+          "width": 1499.8125,
+          "rise": 1014791.6875
+        },
+        {
+          "at": 1037644,
+          "width": 2174.8125,
+          "rise": 1035469.1875
+        },
+        {
+          "at": 1057983.5625,
+          "width": 2342.875,
+          "rise": 1055640.6875
+        },
+        {
+          "at": 1078070.5,
+          "width": 2384.8125,
+          "rise": 1075685.6875
+        },
+        {
+          "at": 1098095,
+          "width": 2395.8125,
+          "rise": 1095699.1875
+        },
+        {
+          "at": 1118104,
+          "width": 2398.75,
+          "rise": 1115705.25
+        }
+      ]
+    },
+    {
+      "name": "right: reaches lower command within120ms",
+      "passed": true,
+      "evidence": [
+        {
+          "at": 1518154,
+          "width": 2393.625,
+          "rise": 1515760.375
+        },
+        {
+          "at": 1535467,
+          "width": 1048.8125,
+          "rise": 1534418.1875
+        },
+        {
+          "at": 1554798,
+          "width": 712.6875,
+          "rise": 1554085.3125
+        },
+        {
+          "at": 1574633,
+          "width": 628.8125,
+          "rise": 1574004.1875
+        },
+        {
+          "at": 1594594,
+          "width": 607.8125,
+          "rise": 1593986.1875
+        },
+        {
+          "at": 1614585,
+          "width": 601.75,
+          "rise": 1613983.25
+        }
+      ]
+    },
+    {
+      "name": "right: full travel stays inside software endpoints",
+      "passed": true
+    },
+    {
+      "name": "right: retains50Hz after timer startup",
+      "passed": true,
+      "evidence": {
+        "meanPeriod": 20003.02573529412,
+        "min": 18657.8125,
+        "max": 20678.4375
+      }
+    },
+    {
+      "name": "right: returns to center",
+      "passed": true
+    }
+  ],
+  "limitation": "Pulse timing simulation only; actual servo mechanics and power are not measured."
+}

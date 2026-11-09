@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+build/
+.arduinoIDE/
+*.hex
+*.elf
+*.map
+*.log

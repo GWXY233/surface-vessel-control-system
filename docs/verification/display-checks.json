@@ -1,0 +1,229 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "display frame0: 580rpm",
+      "passed": true,
+      "actual": [
+        63,
+        109,
+        127,
+        63
+      ],
+      "expected": [
+        63,
+        109,
+        127,
+        63
+      ]
+    },
+    {
+      "name": "display frame1: 595rpm",
+      "passed": true,
+      "actual": [
+        63,
+        109,
+        111,
+        109
+      ],
+      "expected": [
+        63,
+        109,
+        111,
+        109
+      ]
+    },
+    {
+      "name": "display frame2: 600rpm",
+      "passed": true,
+      "actual": [
+        63,
+        125,
+        63,
+        63
+      ],
+      "expected": [
+        63,
+        125,
+        63,
+        63
+      ]
+    },
+    {
+      "name": "display frame3: 601rpm",
+      "passed": true,
+      "actual": [
+        63,
+        125,
+        63,
+        63
+      ],
+      "expected": [
+        63,
+        125,
+        63,
+        63
+      ]
+    },
+    {
+      "name": "display frame4: 650rpm",
+      "passed": true,
+      "actual": [
+        63,
+        125,
+        63,
+        63
+      ],
+      "expected": [
+        63,
+        125,
+        63,
+        63
+      ]
+    },
+    {
+      "name": "display frame5: 1000rpm",
+      "passed": true,
+      "actual": [
+        63,
+        125,
+        63,
+        63
+      ],
+      "expected": [
+        63,
+        125,
+        63,
+        63
+      ]
+    },
+    {
+      "name": "display frame6: E002",
+      "passed": true,
+      "actual": [
+        121,
+        63,
+        63,
+        91
+      ],
+      "expected": [
+        121,
+        63,
+        63,
+        91
+      ]
+    },
+    {
+      "name": "raw feedback never clipped",
+      "passed": true
+    },
+    {
+      "name": "probe completed",
+      "passed": true
+    }
+  ],
+  "transactions": [
+    [
+      64
+    ],
+    [
+      192,
+      63,
+      109,
+      127,
+      63
+    ],
+    [
+      138
+    ],
+    [
+      64
+    ],
+    [
+      192,
+      63,
+      109,
+      111,
+      109
+    ],
+    [
+      138
+    ],
+    [
+      64
+    ],
+    [
+      192,
+      63,
+      125,
+      63,
+      63
+    ],
+    [
+      138
+    ],
+    [
+      64
+    ],
+    [
+      192,
+      63,
+      125,
+      63,
+      63
+    ],
+    [
+      138
+    ],
+    [
+      64
+    ],
+    [
+      192,
+      63,
+      125,
+      63,
+      63
+    ],
+    [
+      138
+    ],
+    [
+      64
+    ],
+    [
+      192,
+      63,
+      125,
+      63,
+      63
+    ],
+    [
+      138
+    ],
+    [
+      64
+    ],
+    [
+      192,
+      121,
+      63,
+      63,
+      91
+    ],
+    [
+      138
+    ]
+  ],
+  "lines": [
+    "Boat V5.4 TARGET595; DISP600CAP; CH1 only",
+    "DISPLAY_PROBE_BEGIN",
+    "RAW=580",
+    "RAW=595",
+    "RAW=600",
+    "RAW=601",
+    "RAW=650",
+    "RAW=1000",
+    "DISPLAY_PROBE_DONE"
+  ]
+}
