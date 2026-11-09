@@ -4,6 +4,8 @@ Arduino Nano 插接式船控板，集成 DRV8833 有刷电机驱动、双舵机�
 
 [English overview](README.en.md) · [完整接线](docs/wiring.md) · [焊接与上电](docs/assembly.md) · [两代方案对比](docs/comparison.md)
 
+**[下载完整 ZIP 资料包](docs/downloads.md)**。解压后打开 `START_HERE.html`，可离线查看接线使用 PDF、焊接教程、原生工程和程序。
+
 ![RevL1 PCB 布线预览](docs/images/pcb.png)
 
 ## 当前版本
