@@ -2,7 +2,9 @@
 
 Arduino Nano 插接式船控板，集成 DRV8833 有刷电机驱动、双舵机接口、编码器输入和四位数码屏接口。使用一块外接降压模块供电，保留原配遥控器与接收机，通过编码器反馈调节单桨电机转速。
 
-[English overview](README.en.md) · [完整接线](docs/wiring.md) · [焊接与上电](docs/assembly.md) · [两代方案对比](docs/comparison.md)
+[English overview](README.en.md) · [完整使用教程](docs/user-guide.md) · [完整接线](docs/wiring.md) · [焊接与上电](docs/assembly.md) · [两代方案对比](docs/comparison.md)
+
+**[嘉立创开源工程：原理图、PCB 与 BOM](https://oshwhub.com/eda_jmihncbf/project_mhcxpkbn)**。已于 2026-11-09 提交开源，平台提示等待后台审核；页面暂不可访问时，可先下载下方 ZIP 或本仓库原生工程。
 
 **[下载完整 ZIP 资料包](docs/downloads.md)**。解压后打开 `START_HERE.html`，可离线查看接线使用 PDF、焊接教程、原生工程和程序。
 
@@ -25,7 +27,7 @@ Arduino Nano 插接式船控板，集成 DRV8833 有刷电机驱动、双舵机�
 
 ## 从哪里开始
 
-1. 在嘉立创 EDA 专业版导入 [原生工程](hardware/revl1/boat-controller-revl1.epro2)，核对当前版本的原理图与 PCB。
+1. 从 [完整使用教程](docs/user-guide.md) 开始。在 [嘉立创工程页](https://oshwhub.com/eda_jmihncbf/project_mhcxpkbn) 查看设计，或在专业版导入 [原生工程](hardware/revl1/boat-controller-revl1.epro2)，核对当前版本的原理图与 PCB。
 2. 查阅 [板上 BOM](hardware/revl1/bom.csv)、[外部模块清单](hardware/external-parts.csv) 和 [机械尺寸](hardware/mechanical.md)。
 3. 按 [装配说明](docs/assembly.md) 检查芯片方向、底部散热盘、供电极性和 Nano 安装方向。
 4. 按 [接线表](docs/wiring.md) 连接接收机、双舵、编码器与显示屏。

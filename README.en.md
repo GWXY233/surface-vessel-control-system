@@ -11,3 +11,5 @@ Start with the [Chinese guide](README.md), [wiring](docs/wiring.md), [assembly](
 The archived PCB passed its native DRC on 2026-10-21. Independent import restoration, the reported XT30 pin-fit issue, thermal performance, power transients, and sustained current capability remain to be validated. A zero DRC count does not establish those properties.
 
 Original project material is released under the MIT License. See [third-party notices](THIRD_PARTY.md) for external libraries and bundled CAD resources.
+
+[EasyEDA / OSHWHub project](https://oshwhub.com/eda_jmihncbf/project_mhcxpkbn): submitted for publication on 2026-11-09; the platform reported pending moderation. The native project in this repository remains available while moderation is pending. The [expanded Chinese tutorial](docs/user-guide.md) covers assembly, wiring, staged power checks, uploading, operation, encoder calibration, and troubleshooting.

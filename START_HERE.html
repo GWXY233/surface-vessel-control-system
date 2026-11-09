@@ -27,12 +27,13 @@
 <body>
 <main>
   <h1>单桨双舵控制板使用入口</h1>
-  <p class="meta">RevL1 硬件 · V5.4 正常固件 · v0.1.0 完整资料包</p>
+  <p class="meta">RevL1 硬件 · V5.4 正常固件 · v0.1.1 完整资料包</p>
   <p>先将 ZIP 全部解压，再打开本页。下面的文档、工程和程序均在资料包内，可离线使用。</p>
   <div class="links">
     <a href="docs/guides/quick-start-v54.pdf">使用说明与接线 PDF</a>
     <a href="docs/guides/assembly-revl1.pdf">四页焊接教程 PDF</a>
     <a href="hardware/revl1/boat-controller-revl1.epro2">原生 PCB 与原理图工程</a>
+    <a href="https://oshwhub.com/eda_jmihncbf/project_mhcxpkbn">嘉立创开源工程</a>
   </div>
   <p class="note"><strong>首次通电前卸下螺旋桨。</strong>总开关打开后，CH1 信号稳定约 0.5 秒就会自动缓启动。J4 接调好为 6.0 V 的降压输出，电池经总开关接 J1。</p>
 
@@ -60,10 +61,11 @@
       <tr><td>正常控制程序</td><td><a href="firmware/Boat_Nano_595_Display600/Boat_Nano_595_Display600.ino">V5.4 程序</a></td></tr>
       <tr><td>PWM 临时诊断程序</td><td><a href="firmware/Boat_Nano_Drive_Diagnostic/Boat_Nano_Drive_Diagnostic.ino">转速与 Pxxx 交替显示</a>，此诊断版目标为 600 r/min</td></tr>
       <tr><td>旧方案对比</td><td><a href="docs/comparison.md">两代对照表</a>，原 L298N 程序和文档位于 <code>legacy/l298n-single-servo/</code></td></tr>
-      <tr><td>详细说明</td><td><a href="docs/wiring.md">接线</a>、<a href="docs/firmware.md">固件</a>、<a href="hardware/mechanical.md">机械尺寸</a>、<a href="docs/known-issues.md">已知问题</a></td></tr>
+      <tr><td>详细说明</td><td><a href="docs/user-guide.md">完整使用教程</a>、<a href="docs/wiring.md">接线</a>、<a href="docs/firmware.md">固件</a>、<a href="hardware/mechanical.md">机械尺寸</a>、<a href="docs/known-issues.md">已知问题</a></td></tr>
     </tbody>
   </table>
   <p>Markdown 文件可用文本编辑器阅读。原生工程包含原理图、PCB 和工程库资源。Gerber、贴片坐标等制造文件需在核对工程后从 EDA 导出。</p>
+  <p><a href="https://oshwhub.com/eda_jmihncbf/project_mhcxpkbn">嘉立创工程页</a>已关联原理图、PCB、BOM及资料包，2026-11-09已提交开源，平台提示等待后台审核。本版按作者选择提供该链接作为在线工程入口，ZIP内未新增独立Gerber和贴片坐标。</p>
   <p><strong>XT30 插脚匹配仍需核实。</strong>现有板焊封装为 5.0 mm 间距、1.8 mm 钻孔，购买的实物需先对照型号与脚径。完整记录见 <code>docs/known-issues.md</code>。</p>
   <img src="docs/images/pcb.png" alt="RevL1 控制板布线预览">
   <p class="meta">开源主页 <a href="https://github.com/GWXY233/surface-vessel-control-system">GWXY233/surface-vessel-control-system</a> · 原创内容采用 MIT 许可证，第三方资源见包内 THIRD_PARTY.md。</p>
